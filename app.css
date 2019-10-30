@@ -32,7 +32,7 @@ body {
   border-radius: 0.7vw;
   color: #fff;
   font-size: 2.3vw;
-  margin-top: -18vw;
+  margin-top: -14vw;
 }
 .item-name {
   display: flex;
@@ -133,4 +133,29 @@ body {
 }
 .teth:hover #close-icon {
   display: block;
+}
+@keyframes giga
+{
+0%
+{
+  height: 30px;
+  width: 30px;
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+}
+50%
+{
+  height: 2px;
+  width: 2px;
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+}
+75%
+{
+  margin-left:1vw;
+}
+100%
+{
+  height: 2px; width: 400px; margin-left:2vw; border-radius: 0%;
+}
 }
