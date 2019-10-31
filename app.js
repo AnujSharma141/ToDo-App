@@ -19,9 +19,14 @@ function sub() {
     items.id = index;
 // done line
     items.onclick = function() {
-      done.style.cssText =
-        " transition: 0.3s; animation:giga 0.9s; height: 2px; width: 400px; margin-left:2vw; border-radius: 0%;";
-    };
+        console.log(i);
+        if(i==0)
+        {
+        done.style.cssText =
+        " transition: 0.3s; animation:line-on 0.9s; height: 2px; width: 400px; margin-left:2vw; border-radius: 0%;";
+        };
+        
+    }
     let cancel = document.createElement("div");
     cancel.className = "cross";
     cancel.innerHTML = '<img src="close.png" id="close-icon" />';
