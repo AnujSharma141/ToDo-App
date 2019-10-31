@@ -58,8 +58,13 @@ body {
   border: 0px;
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  border: 0px transparent;
+}
+input:focus{
+    outline: none;
 }
 .funct {
   padding: 1vw 2.5vw;
@@ -88,7 +93,16 @@ body {
   color:#fff;
   margin-top:2%;
 }
-
+.two::before
+{
+  content:'';
+  display:block;
+  background: #fff;
+  height:7vw;
+  width:7vw;
+ background:url(clip.svg);
+ margin-top:-7vw;
+}
 .teth {
   background: rgb(136, 122, 0);
   height: 3vw;

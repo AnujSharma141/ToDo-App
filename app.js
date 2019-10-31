@@ -24,8 +24,7 @@ function sub() {
         {
         done.style.cssText =
         " transition: 0.3s; animation:line-on 0.9s; height: 2px; width: 400px; margin-left:2vw; border-radius: 0%;";
-        };
-        
+        }
     }
     let cancel = document.createElement("div");
     cancel.className = "cross";
@@ -36,7 +35,12 @@ function sub() {
     };
     items.appendChild(cancel);
     document.querySelector(".two").appendChild(items);
+    input.focus();
     index++;
   }
 }
-
+document.onkeydown = function(e){
+    if (e.keyCode === 13) {
+        sub();
+    }
+  };
