@@ -27,7 +27,7 @@ function sub() {
     }
     let cancel = document.createElement("div");
     cancel.className = "cross";
-    cancel.innerHTML = '<img src="../img/close.png" id="close-icon" />';
+    cancel.innerHTML = '<img src="img/close.png" id="close-icon" />';
 // close item 
     cancel.onclick = function() {
       cancel.parentElement.remove();
